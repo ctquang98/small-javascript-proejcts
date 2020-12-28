@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* -------------------- Countdown Timer -------------------- */
+.background-container {
+    background-image: url('./images/spring.jpg');
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+.countdown-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 21%;
+    right: 10%;
+}
+
+.countdown-container .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.days-container,
+.hours-container,
+.mins-container,
+.secs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+
+.num-text {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.text {
+    font-size: 1rem;
+}
+
+#changeBackgroundBtn {
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    width: 250px;
+    margin-top: 20px;
+    background-color: #6083a5;
+    font-size: 1.25rem;
+    color: #ffffff;
+    border-radius: 9px;
+    box-shadow: 5px 5px #7f96b1;
+    cursor: pointer;
+}
+/* -------------------- Rain Animation -------------------- */
+.rain-elm {
+    position: fixed;
+    top: -1vh;
+    font-size: 1.5rem;
+    transform: translateY(0);
+    animation: fall 3s forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(101vh);
+    }
+}
+/* -------------------- Weather Forecast -------------------- */
+.wf-title {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.weather-forecast-container .container {
+    min-height: 100vh;
+    background: #B993D6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.weather-forecast-container .container input {
+    outline: none;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+.weather-info-container {
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .countdown-container {
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .num-text {
+        font-size: 1.5rem;
+    }
+
+    .days-container,
+    .hours-container,
+    .mins-container,
+    .secs-container {
+        width: 75px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .countdown-container {
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -5%);
+    }
+
+    .countdown-container h1 {
+        font-size: 1rem;
+    }
+
+    .num-text {
+        font-size: 1rem;
+    }
+
+    .days-container,
+    .hours-container,
+    .mins-container,
+    .secs-container {
+        width: 75px;
+    }
+}

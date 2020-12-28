@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Coundown Timer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <script type="module" src='index.js' defer></script>
+</head>
+<body>
+    <!------------------- Countdown Timer ------------------->
+    <div class="background-container">
+        <div class="countdown-container">
+            <h1>New Year Eve</h1>
+            <div class="container">
+                <div class="days-container">
+                    <p class="num-text" id="days">0</p>
+                    <p class="text">days</p>
+                </div>
+                <div class="hours-container">
+                    <p class="num-text" id="hours">0</p>
+                    <p class="text">hours</p>
+                </div>
+                <div class="mins-container">
+                    <p class="num-text" id="mins">0</p>
+                    <p class="text">mins</p>
+                </div>
+                <div class="secs-container">
+                    <p class="num-text" id="secs">0</p>
+                    <p class="text">secconds</p>
+                </div>
+            </div>
+            <button id="changeBackgroundBtn">Change background</button>
+        </div>
+    </div>
+    <!------------------- Rain Animation ------------------->
+    <div class="rain-animation-c" id="rainContainer">
+
+    </div>
+    <!------------------- Weather Forecast ------------------->
+    <div class="weather-forecast-container">
+        <p class="wf-title">Weather Forecast</p>
+        <div class="container">
+            <input type="text" id="locationSearch" placeholder="Enter your city"/>
+            <div class="weather-info-container">
+                <img id="weatherIcon" alt="weather icon"/>
+                <p id="weatherDetails">32C - windy</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
