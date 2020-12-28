@@ -1,1 +1,1 @@
-# small-javascript-proejcts2
+# small-javascript-proejcts2.2
