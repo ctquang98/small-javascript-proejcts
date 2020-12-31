@@ -3,7 +3,7 @@ const hoursElm = document.getElementById('hours');
 const minsElm = document.getElementById('mins');
 const secsElm = document.getElementById('secs');
 
-const newYear = '1 Jan 2021';
+let newYear = '12 Feb 2021';
 
 function formatTime(time) {
     return time < 10 ? `0${time}` : time;
