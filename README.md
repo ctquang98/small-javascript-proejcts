@@ -1,1 +1,1 @@
-# small-javascript-proejcts3
+![Alt text](./images/1.jpg)
